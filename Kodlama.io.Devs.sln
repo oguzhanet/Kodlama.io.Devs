@@ -9,17 +9,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "corePackages", "corePackage
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projects", "Projects", "{B4A526F5-DF1A-4942-9236-07D8CF7DBA06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kodlama.io.Devs.Application", "src\projects\Kodlama.io.Devs.Application\Kodlama.io.Devs.Application.csproj", "{C4DC6166-8A47-4420-BCB6-B007C3A0B6EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kodlama.io.Devs.Application", "src\projects\Kodlama.io.Devs.Application\Kodlama.io.Devs.Application.csproj", "{C4DC6166-8A47-4420-BCB6-B007C3A0B6EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kodlama.io.Devs.Domain", "src\projects\Kodlama.io.Devs.Domain\Kodlama.io.Devs.Domain.csproj", "{DA57DCB1-7C27-4EE7-9887-2272A4BE6ED5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kodlama.io.Devs.Domain", "src\projects\Kodlama.io.Devs.Domain\Kodlama.io.Devs.Domain.csproj", "{DA57DCB1-7C27-4EE7-9887-2272A4BE6ED5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kodlama.io.Devs.Infrastructure", "src\projects\Kodlama.io.Devs.Infrastructure\Kodlama.io.Devs.Infrastructure.csproj", "{3C5AD8EF-15B5-4861-8635-FDCCB66242CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kodlama.io.Devs.Infrastructure", "src\projects\Kodlama.io.Devs.Infrastructure\Kodlama.io.Devs.Infrastructure.csproj", "{3C5AD8EF-15B5-4861-8635-FDCCB66242CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kodlama.io.Devs.Persistence", "src\projects\Kodlama.io.Devs.Persistence\Kodlama.io.Devs.Persistence.csproj", "{174BBF83-AF04-4DBE-9E5A-9DC729070343}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kodlama.io.Devs.Persistence", "src\projects\Kodlama.io.Devs.Persistence\Kodlama.io.Devs.Persistence.csproj", "{174BBF83-AF04-4DBE-9E5A-9DC729070343}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kodlama.io.Devs.WebAPI", "src\projects\Kodlama.io.Devs.WebAPI\Kodlama.io.Devs.WebAPI.csproj", "{8368AC13-89D8-44CA-BC4D-C56FFC00AFE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kodlama.io.Devs.WebAPI", "src\projects\Kodlama.io.Devs.WebAPI\Kodlama.io.Devs.WebAPI.csproj", "{8368AC13-89D8-44CA-BC4D-C56FFC00AFE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Persistence", "src\corePackages\Core.Persistence\Core.Persistence.csproj", "{E1ED5DFF-802B-4FE4-8E66-327F1793D7F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Persistence", "src\corePackages\Core.Persistence\Core.Persistence.csproj", "{E1ED5DFF-802B-4FE4-8E66-327F1793D7F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Application", "src\corePackages\Core.Application\Core.Application.csproj", "{06B54B86-C76B-4440-A4D7-F754CB128946}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{E1ED5DFF-802B-4FE4-8E66-327F1793D7F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1ED5DFF-802B-4FE4-8E66-327F1793D7F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1ED5DFF-802B-4FE4-8E66-327F1793D7F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06B54B86-C76B-4440-A4D7-F754CB128946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06B54B86-C76B-4440-A4D7-F754CB128946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06B54B86-C76B-4440-A4D7-F754CB128946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06B54B86-C76B-4440-A4D7-F754CB128946}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{174BBF83-AF04-4DBE-9E5A-9DC729070343} = {B4A526F5-DF1A-4942-9236-07D8CF7DBA06}
 		{8368AC13-89D8-44CA-BC4D-C56FFC00AFE9} = {B4A526F5-DF1A-4942-9236-07D8CF7DBA06}
 		{E1ED5DFF-802B-4FE4-8E66-327F1793D7F1} = {AE56F11E-D258-4B09-9CDA-262932582E20}
+		{06B54B86-C76B-4440-A4D7-F754CB128946} = {AE56F11E-D258-4B09-9CDA-262932582E20}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEA9456C-4855-4BA9-BD22-83F6FB7AA140}
