@@ -8,6 +8,7 @@ namespace Kodlama.io.Devs.Persistence.Contexts
     {
         protected IConfiguration Configuration { get; set; }
         public DbSet<ProgrammingLanguage> ProgrammingLanguages { get; set; }
+        public DbSet<ProgrammingTechnology> ProgrammingTechnologies { get; set; }
 
         public BaseDbContext(DbContextOptions dbContextOptions, IConfiguration configuration) : base(dbContextOptions)
         {
@@ -16,12 +17,18 @@ namespace Kodlama.io.Devs.Persistence.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<ProgrammingLanguage>(a =>
-            {
-                a.ToTable("ProgrammingLanguages").HasKey(k => k.Id);
-                a.Property(p => p.Id).HasColumnName("Id");
-                a.Property(p => p.Name).HasColumnName("Name");
-            });
+            modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
+
+
+            /** Moved to EntityConfigurations folder **/
+
+            //modelBuilder.Entity<ProgrammingLanguage>(a =>
+            //{
+            //    a.ToTable("ProgrammingLanguages").HasKey(k => k.Id);
+            //    a.Property(p => p.Id).HasColumnName("Id");
+            //    a.Property(p => p.Name).HasColumnName("Name");
+            //    a.HasMany(p => p.ProgrammingTechnologies);
+            //});
         }
     }
 }
